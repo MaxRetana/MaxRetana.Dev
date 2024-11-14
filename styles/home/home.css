@@ -1,0 +1,55 @@
+@import '../variables.css';
+/* Estilo para el contenedor de perfil */
+
+
+.container {
+  display: flex; /* Flexbox para alinear los elementos */
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+.profile {
+  text-align: center; /* Centra el texto dentro de .profile */
+  height: auto; /* Altura automática */
+  width: 500px; /* Ancho fijo */
+  padding: 20px; /* Espacio interior */
+  margin: 20px; /* Margen entre los cuadros */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto */
+}
+
+.profile:hover {
+  transform: translateY(-5px); /* Eleva el cuadro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilo para la imagen */
+.profile img {
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  height: 150px; /* Mantén las dimensiones iguales para que sea circular */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Mantiene la imagen proporcional dentro del contorno redondo */
+  margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el nombre y ocupación */
+.profile h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--colorFont);
+}
+
+.profile p {
+  font-size: 18px;
+  color: var(--colorFont);
+}
+
+.contact{
+  color: var(--colorFont);
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  justify-content: center; /* Centra el contenido verticalmente */
+  /* align-items: center; Centra los elementos horizontalmente */
+  text-align: left; /* Centra el texto dentro de cada párrafo */
+  height: auto; /* Altura automática */
+  width: 500px; /* Ancho fijo */
+}
