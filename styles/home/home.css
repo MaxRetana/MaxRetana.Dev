@@ -52,4 +52,34 @@
   text-align: left; /* Centra el texto dentro de cada párrafo */
   height: auto; /* Altura automática */
   width: 500px; /* Ancho fijo */
+  padding: 100px; /* Espacio interior */
+}
+
+.container-about{
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.aboutme{
+  color: var(--colorFont);
+  text-align: justify; /* Centra el texto dentro de cada párrafo */
+  height: auto; /* Altura automática */
+  width: 70%; /* Ancho fijo */
+  padding: 15px; /* Espacio interior */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto */
+}
+
+.aboutme:hover {
+  transform: translateY(-5px); /* Eleva el cuadro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.aboutme h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--colorFont);
+  text-align: center;
 }

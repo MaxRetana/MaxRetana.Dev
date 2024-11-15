@@ -1,0 +1,88 @@
+@import '../variables.css';
+
+/* General container styling */
+.container-courses {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--colorFont);
+}
+
+/* Grid for courses */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+}
+
+/* Styling for individual course cards */
+.course-card {
+  background-color: var(--colorBackground);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images */
+.course-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: var(--colorFont);
+}
+
+/* Styling for course details */
+.course-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: var(--colorFont);
+}
+
+.course-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: var(--colorFont);
+}
+
+.course-card a {
+  font-size: 14px;
+  color: #0073b1; /* LinkedIn-style blue */
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.course-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-grid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}

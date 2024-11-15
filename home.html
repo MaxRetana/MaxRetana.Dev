@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/default.css">
   <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/footer.css">
   <link rel="stylesheet" href="/styles/home/home.css">
+  <link rel="stylesheet" href="/styles/skills/skills.css">
+  <link rel="stylesheet" href="/styles/experience/experience.css">
+  <link rel="stylesheet" href="/styles/courses/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Home</title>
 </head>
 <body>
@@ -13,10 +18,11 @@
     <h1>My CV</h1>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="experiencie.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="courses.html">Courses</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experiencie.html">Experience</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
   </header>
@@ -29,14 +35,214 @@
       </div>
       <div class="contact">
         <h2>Contact Information</h2>
-        <p>Email: maxretana.dev@gmail.com</p>
-        <p>Phone: (+52) 312-302-5006</p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/maxretana/" target="_blank">MaxRetana</a></p>
+        <p><i class="fa-regular fa-envelope"></i> Email: maxretana.dev@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> Phone: (+52) 312-302-5006</p>
+        <p><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/maxretana/" target="_blank">MaxRetana</a></p>
       </div>
     </div>
-    <div class="aboutme">
-      about me
+    <div class="container-about">
+      <div class="aboutme">
+        <h2>About Me</h2>
+        <p>
+          I am a backend developer with big data experience, specialized in web application development and process automation. 
+          With a focus on technologies such as Django, Flask, FastAPI, React, and both relational and non-relational databases, 
+          I enjoy working in a team and adapt quickly to any circumstance. My commitment is to continuous improvement and effective problem solving. 
+          I value organization and clear communication, which helps me to approach each project in a structured way and to understand my colleagues well. 
+          I have an intermediate conversational level of English, which facilitates my participation in international projects. 
+          My daily motivation is to learn something new, and I look for projects that challenge me and allow me to grow professionally.
+        </p>
+      </div>
     </div>
+    <div class="container-skills">
+      <div class="skills">
+        <h2>Skills</h2>
+        <section class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Ruby</div>
+          <div class="skill-card">SQL</div>
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+        </section>
+
+        <section class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-card">MonogoDB</div>
+          <div class="skill-card">Sqlite</div>
+          <div class="skill-card">PostgreSQL</div>
+        </section>
+        
+        <section class="skill-category">
+          <h3>Frameworks</h3>
+          <div class="skill-card">Django</div>
+          <div class="skill-card">Flask</div>
+          <div class="skill-card">FastAPI</div>
+          <div class="skill-card">React</div>
+        </section>
+        
+        <section class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">Linux</div>
+          <div class="skill-card">Windows</div>
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">Kubernetes</div>
+          <div class="skill-card">Odoo</div>
+        </section>
+
+        <section class="skill-category">
+          <h3>Big Data</h3>
+          <div class="skill-card">Pyspark</div>
+          <div class="skill-card">Hadoop</div>
+          <div class="skill-card">Pandas</div>
+          <div class="skill-card">Nifi</div>
+        </section>
+        
+        <section class="skill-category">
+          <h3>Soft Skills</h3>
+          <div class="skill-card">Problem Solving</div>
+          <div class="skill-card">Teamwork</div>
+          <div class="skill-card">Communication</div>
+          <div class="skill-card">Organization</div>
+          <div class="skill-card">Continuous Improvement</div>
+        </section>
+      </div>
+    </div>
+    <div class="container-experience">
+      <h2>Experience</h2>
+      <!-- Work Experience -->
+      <div class="experience-card">
+        <h2>Hyper-OX</h2>
+        <h3>Big Data Developer</h3>
+        <p>July 2023 - Present</p>
+        <ul>
+          <li>Led a project for the creation of a data center based on a DMS with artificial intelligence to optimize user work.</li>
+          <li><strong>Skills acquired:</strong> Server creation and administration in Proxmox.</li>
+          <li><strong>Technologies used:</strong> Python, NiFi, Spark, Elasticsearch, Kafka.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h2>Hyper-OX</h2>
+        <h3>Backend Developer</h3>
+        <p>July 2023 - Present</p>
+        <ul>
+          <li>Responsible for developing a document management system (DMS) from conception to implementation.</li>
+          <li>Performed API integrations, including integration with a NAS API.</li>
+          <li><strong>Technologies used:</strong> Python, Django, Django REST Framework, React, PostgreSQL, MongoDB.</li>
+          <li><strong>Additional skills:</strong> Proxmox server configuration and administration.</li>
+        </ul>
+      </div>
+      <!-- Education -->
+      <div class="experience-card last">
+        <h2>University of Colima</h2>
+        <h3>Intelligent Computing Engineering</h3>
+        <p>August 2019 - December 2023</p>
+        <p>Graduated with academic excellence and awarded the best GPA in the program.</p>
+      </div>
+    </div>
+
+    <div class="container-courses courses">
+      <h2>Courses</h2>
+      <div class="course-grid">
+        <!-- Course Card 1 -->
+        <div class="course-card">
+          <h3>Aprende PYTHON de CERO a EXPERTO</h3>
+          <p><strong>Issued by:</strong> Udemy</p>
+          <p><strong>Issued on:</strong> November 2024</p>
+          <img src="/imgs/courses/Aprende Python de Cero a Experto.jpg" alt="Course Image">
+          <a href="https://www.udemy.com/certificate/UC-bb8659ea-9ac7-4e53-a6e4-413693e993d1/" target="_blank">View Certificate</a>
+        </div>
+        
+        <!-- Course Card 2 -->
+        <div class="course-card">
+          <h3>Curso de Java</h3>
+          <p><strong>Issued by:</strong> Platzi</p>
+          <p><strong>Issued on:</strong> November 2024</p>
+          <img src="/imgs/courses/diploma-java.jpg" alt="Course Image">
+          <a href="https://platzi.com/p/maxretana981/curso/10630-java/diploma/detalle/" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>JavaScript for Beginners: The Complete Course for Beginners</h3>
+          <p><strong>Issued by:</strong> Meta Brains</p>
+          <p><strong>Issued on:</strong> November 2024</p>
+          <img src="/imgs/courses/JavaScript for Beginners The Complete Course for Beginners.jpg" alt="Course Image">
+          <a href="https://www.udemy.com/certificate/UC-8b420c0a-3878-4e35-96a3-47543afaf9ee/" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>TypeScript for Beginners: Mastering TypeScript Fundamentals</h3>
+          <p><strong>Issued by:</strong> Meta Brains</p>
+          <p><strong>Issued on:</strong> November 2024</p>
+          <img src="/imgs/courses/TypeScript for Beginners Mastering TypeScript Fundamentals.jpg" alt="Course Image">
+          <a href="https://www.udemy.com/certificate/UC-3171f5d5-793b-4751-b17d-f01891c6bbae/" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Web Scraping con Python</h3>
+          <p><strong>Issued by:</strong> Udemy</p>
+          <p><strong>Issued on:</strong> November 2024</p>
+          <img src="/imgs/courses/Web Scraping con Python.jpg" alt="Course Image">
+          <a href="https://www.udemy.com/certificate/UC-0401285c-0056-4cd5-9505-1f9fc0d746b2/" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Introduction to Fortinet Network Security r5</h3>
+          <p><strong>Issued by:</strong> Fortinet</p>
+          <p><strong>Issued on:</strong> June 2024</p>
+          <img src="/imgs/courses/Introduction to Fortinet Network Security r5.jpg" alt="Course Image">
+          <!-- <a href="https://www.udemy.com/certificate/UC-0401285c-0056-4cd5-9505-1f9fc0d746b2/" target="_blank">View Certificate</a> -->
+        </div>
+
+        <div class="course-card">
+          <h3>Java JRE y JDK: compile y ejecute su primer programa</h3>
+          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
+          <p><strong>Issued on:</strong> June 2023</p>
+          <img src="/imgs/courses/Java JRE y JDK.png" alt="Course Image">
+          <a href="https://app.aluracursos.com/certificate/45c6b2ad-1938-45cc-a057-cd1ab094d5d6" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Java OO: Entendiendo la Orientación a Objetos</h3>
+          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
+          <p><strong>Issued on:</strong> June 2023</p>
+          <img src="/imgs/courses/Java OO.png" alt="Course Image">
+          <a href="https://app.aluracursos.com/certificate/e4858c46-d49e-4cbc-ae94-aee4113d4402" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>BrightCoders Ruby on Rails Graduate</h3>
+          <p><strong>Issued by:</strong> BrightCoders</p>
+          <p><strong>Issued on:</strong> May 2023</p>
+          <img src="/imgs/courses/Ruby.png" alt="Course Image">
+          <a href="https://badgr.com/public/assertions/drh2bid3SymZtoCmkoBBmw" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Lógica de programación: Primeros pasos</h3>
+          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
+          <p><strong>Issued on:</strong> April 2023</p>
+          <img src="/imgs/courses/LogicaProgramacion.png" alt="Course Image">
+          <a href="https://app.aluracursos.com/certificate/114ad24c-cc05-4ccd-91b5-7756cbe00340" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="course-card">
+          <h3>BrightCoder Accepted</h3>
+          <p><strong>Issued by:</strong> BrightCoder</p>
+          <p><strong>Issued on:</strong> December 2022</p>
+          <img src="/imgs/courses/BrightcodersAccepted.png" alt="Course Image">
+          <a href="https://badgr.com/public/assertions/oK8XrOFwRX-u84mCIbLBJw" target="_blank">View Certificate</a>
+        </div>
+  
+        <!-- Add more course cards as needed -->
+      </div>
+    </div>
+    <footer>
+      <p>Maximiliano Retana - <script>document.write(new Date().getFullYear());</script></p>
+      <img src="/imgs/mrlogo.png" alt="MRLogo">
+    </footer>
   </main>
 </body>
 </html>

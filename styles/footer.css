@@ -1,0 +1,31 @@
+/* Estilos para el footer */
+footer {
+  position: fixed; /* Hace que el footer esté fijo al final de la página */
+  bottom: 0; /* Lo coloca en la parte inferior */
+  left: 0;
+  width: 100%; /* Ocupa el ancho completo */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  display: flex; /* Flexbox para alinear el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 10px 20px; /* Espacio interior */
+  font-size: 14px; /* Tamaño de la fuente */
+  gap: 10px; /* Espacio entre el texto y el logo */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  z-index: 10; /* Asegura que el footer esté encima de otros elementos */
+}
+
+/* Estilos para el texto */
+footer p {
+  margin: 0; /* Quita el margen del párrafo */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para la imagen del logo */
+footer img {
+  width: 30px; /* Tamaño del logo */
+  height: 30px; /* Tamaño del logo */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
