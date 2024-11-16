@@ -83,3 +83,20 @@
   color: var(--colorFont);
   text-align: center;
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .profile, .contact {
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra las tarjetas */
+  }
+
+  .contact {
+    padding: 20px; /* Reduce el padding para dispositivos pequeños */
+  }
+}

@@ -14,6 +14,7 @@ footer {
   gap: 10px; /* Espacio entre el texto y el logo */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
   z-index: 10; /* Asegura que el footer esté encima de otros elementos */
+  margin-top: 50px;
 }
 
 /* Estilos para el texto */
