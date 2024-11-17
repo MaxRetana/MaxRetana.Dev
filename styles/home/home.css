@@ -63,7 +63,6 @@
 
 .aboutme{
   color: var(--colorFont);
-  text-align: justify; /* Centra el texto dentro de cada párrafo */
   height: auto; /* Altura automática */
   width: 70%; /* Ancho fijo */
   padding: 15px; /* Espacio interior */
