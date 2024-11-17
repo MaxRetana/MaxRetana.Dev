@@ -77,7 +77,29 @@ h2 {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .course-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Alinea automáticamente los elementos al deslizar */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    padding: 10px 0;
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  }
+
+  .course-grid::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit */
+  }
+
+  .course-card {
+    flex: 0 0 auto; /* Evita que las tarjetas se reduzcan o expandan */
+    scroll-snap-align: start; /* Alinea las tarjetas al inicio del contenedor */
+    min-width: 80%; /* Cada tarjeta ocupa el 80% del ancho de la pantalla */
+    max-width: 300px; /* Opcional: limita el ancho de las tarjetas */
+  }
+
+  .course-card img {
+    width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: auto;
+    object-fit: cover;
   }
 }
 
