@@ -3,244 +3,488 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/default.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/home/home.css">
-  <link rel="stylesheet" href="styles/skills/skills.css">
-  <link rel="stylesheet" href="styles/experience/experience.css">
-  <link rel="stylesheet" href="styles/courses/courses.css">
+  <link rel="stylesheet" href="styles/cv-modern.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Home</title>
+  <title>Maximiliano Retana - Backend Developer</title>
 </head>
 <body>
-  <header>
-    <h1>My CV</h1>
-  </header>
-  <main>
-    <div class="container">
-      <div class="profile">
-        <img src="imgs/profile.jpeg" alt="Profile picture">
-        <h2>Maximiliano Retana</h2>
-        <p>Backend Developer</p>
-      </div>
-      <div class="contact">
-        <h2>Contact Information</h2>
-        <p><i class="fa-regular fa-envelope"></i> Email: maxretana.dev@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> Phone: (+52) 312-302-5006</p>
-        <p><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/maxretana/" target="_blank">MaxRetana</a></p>
-      </div>
-    </div>
-    <div class="container-about">
-      <div class="aboutme">
-        <h2>About Me</h2>
-        <p>
-          I am a backend developer with big data experience, specialized in web application development and process automation. 
-          With a focus on technologies such as Django, Flask, FastAPI, React, and both relational and non-relational databases, 
-          I enjoy working in a team and adapt quickly to any circumstance. My commitment is to continuous improvement and effective problem solving. 
-          I value organization and clear communication, which helps me to approach each project in a structured way and to understand my colleagues well. 
-          I have an intermediate conversational level of English, which facilitates my participation in international projects. 
-          My daily motivation is to learn something new, and I look for projects that challenge me and allow me to grow professionally.
-        </p>
-      </div>
-    </div>
-    <div class="container-skills">
-      <div class="skills">
-        <h2>Skills</h2>
-        <section class="skill-category">
-          <h3>Programming Languages</h3>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Ruby</div>
-          <div class="skill-card">SQL</div>
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-        </section>
+<div class="cv-container">
+  <!-- Language Toggle Button -->
+  <div class="language-toggle">
+    <button id="languageBtn" class="lang-btn">
+      <i class="fas fa-globe"></i>
+      <span id="langText">ES</span>
+    </button>
+  </div>
 
-        <section class="skill-category">
-          <h3>Databases</h3>
-          <div class="skill-card">MonogoDB</div>
-          <div class="skill-card">Sqlite</div>
-          <div class="skill-card">PostgreSQL</div>
-        </section>
-        
-        <section class="skill-category">
-          <h3>Frameworks</h3>
-          <div class="skill-card">Django</div>
-          <div class="skill-card">Flask</div>
-          <div class="skill-card">FastAPI</div>
-          <div class="skill-card">React</div>
-        </section>
-        
-        <section class="skill-category">
-          <h3>Tools</h3>
-          <div class="skill-card">Git</div>
-          <div class="skill-card">Linux</div>
-          <div class="skill-card">Windows</div>
-          <div class="skill-card">Docker</div>
-          <div class="skill-card">Kubernetes</div>
-          <div class="skill-card">Odoo</div>
-        </section>
-
-        <section class="skill-category">
-          <h3>Big Data</h3>
-          <div class="skill-card">Pyspark</div>
-          <div class="skill-card">Hadoop</div>
-          <div class="skill-card">Pandas</div>
-          <div class="skill-card">Nifi</div>
-        </section>
-        
-        <section class="skill-category">
-          <h3>Soft Skills</h3>
-          <div class="skill-card">Problem Solving</div>
-          <div class="skill-card">Teamwork</div>
-          <div class="skill-card">Communication</div>
-          <div class="skill-card">Organization</div>
-          <div class="skill-card">Continuous Improvement</div>
-        </section>
+  <div class="terminal-content">
+    <!-- Terminal Header -->
+    <div class="command-line">
+      <span class="prompt">maxretana@dev:</span><span class="path">~/portfolio</span><span class="command" data-key="terminalCommand">$ cat README.md</span><span class="cursor"></span>
+    </div>
+    
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <div class="section-header">
+        <span class="section-title" data-key="profileInfo">PROFILE_INFO</span>
+      </div>
+      
+      <div class="profile-display">
+        <div class="avatar-ascii">
+          <img src="imgs/profile.jpeg" alt="Maximiliano Retana">
+        </div>
+        <div class="profile-info">
+          <div class="profile-name">MAXIMILIANO RETANA</div>
+          <div class="profile-title" data-key="profileTitle">BACKEND DEVELOPER | BIG DATA SPECIALIST</div>
+          <div class="profile-description" data-key="profileDescription">
+            I am a backend developer with big data experience, specialized in web application 
+            development and process automation. With a focus on technologies such as Django, 
+            Flask, FastAPI, React, and both relational and non-relational databases, I enjoy 
+            working in a team and adapt quickly to any circumstance. My commitment is to 
+            continuous improvement and effective problem solving.
+          </div>
+          
+          <div class="command-output">
+            <div class="output-line"><span data-key="interests">Interests:</span> Programming, Big Data, AI/ML, DevOps</div>
+            <div class="output-line"><span data-key="location">Location:</span> Colima, Mexico</div>
+            <div class="output-line"><span data-key="age">Age:</span> 26 <span data-key="years">years</span></div>
+            <div class="output-line"><span data-key="status">Status:</span> <span data-key="available">Currently working</span></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-experience">
-      <h2>Experience</h2>
-      <!-- Work Experience -->
-      <div class="experience-card">
-        <h2>Hyper-OX</h2>
-        <h3>Big Data Developer</h3>
-        <p>July 2023 - Present</p>
-        <ul>
-          <li>Led a project for the creation of a data center based on a DMS with artificial intelligence to optimize user work.</li>
-          <li><strong>Skills acquired:</strong> Server creation and administration in Proxmox.</li>
-          <li><strong>Technologies used:</strong> Python, NiFi, Spark, Elasticsearch, Kafka.</li>
+
+    <!-- Contact Information -->
+    <div class="section-header">
+      <span class="section-title" data-key="contactInfo">CONTACT_INFO</span>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="contact-label">EMAIL:</span>
+        <span class="contact-value">maxretana.dev@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label" data-key="phone">PHONE:</span>
+        <span class="contact-value">(+52) 312-302-5006</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">LINKEDIN:</span>
+        <span class="contact-value"><a href="https://www.linkedin.com/in/maxretana/" target="_blank">MaxRetana</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">GITHUB:</span>
+        <span class="contact-value"><a href="https://github.com/maxretana" target="_blank">maxretana</a></span>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-header">
+      <span class="section-title" data-key="workExperience">WORK_EXPERIENCE</span>
+    </div>
+    
+    <div class="experience-item">
+      <div class="job-title" data-key="softwareDeveloper">SOFTWARE DEVELOPER</div>
+      <div class="job-company">Grupo Trusot</div>
+      <div class="job-period" data-key="january2025Present">January 2025 - Present</div>
+      <div class="job-description">
+        <ul data-key="trusotTasks">
+            <li>Updating and maintaining existing modules of odoo applications</li>
+            <li>Developing new modules and features based on client requirements</li>
+            <li>Integrating odoo with third-party services and APIs</li>
+            <li>Optimizing database performance and queries for large datasets</li>
+            <li>Helping users troubleshoot and resolve issues</li>
+            <li>Creating APIs to facilitate integration with odoo</li>
         </ul>
       </div>
-      <div class="experience-card">
-        <h2>Hyper-OX</h2>
-        <h3>Backend Developer</h3>
-        <p>July 2023 - Present</p>
-        <ul>
-          <li>Responsible for developing a document management system (DMS) from conception to implementation.</li>
-          <li>Performed API integrations, including integration with a NAS API.</li>
-          <li><strong>Technologies used:</strong> Python, Django, Django REST Framework, React, PostgreSQL, MongoDB.</li>
-          <li><strong>Additional skills:</strong> Proxmox server configuration and administration.</li>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title" data-key="bigDataDeveloper">BIG DATA DEVELOPER</div>
+      <div class="job-company">Hyper-OX Technologies</div>
+      <div class="job-period" data-key="july2023November2024">July 2023 - November 2024</div>
+      <div class="job-description">
+        <ul data-key="hyperoxBigDataTasks">
+          <li>Led a project for the creation of a data center based on a DMS with artificial intelligence to optimize user work</li>
+          <li>Server creation and administration in Proxmox virtualization platform</li>
+          <li>Implemented big data pipelines using Python, Apache NiFi, Spark, and Elasticsearch</li>
+          <li>Developed real-time data processing solutions with Apache Kafka</li>
+          <li>Optimized data workflows resulting in 40% performance improvement</li>
         </ul>
       </div>
-      <!-- Education -->
-      <div class="experience-card last">
-        <h2>University of Colima</h2>
-        <h3>Intelligent Computing Engineering</h3>
-        <p>August 2019 - December 2023</p>
-        <p>Graduated with academic excellence and awarded the best GPA in the program.</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title" data-key="backendDeveloper">BACKEND DEVELOPER</div>
+      <div class="job-company">Hyper-OX Technologies</div>
+      <div class="job-period" data-key="july2023November2024">July 2023 - November 2024</div>
+      <div class="job-description">
+        <ul data-key="hyperoxBackendTasks">
+          <li>Developed a comprehensive document management system (DMS) from conception to implementation</li>
+          <li>Implemented RESTful APIs and integrated with third-party services including NAS API</li>
+          <li>Built scalable backend solutions using Python, Django, and FastAPI</li>
+          <li>Designed and optimized database schemas for PostgreSQL and MongoDB</li>
+          <li>Collaborated with frontend team using React for seamless integration</li>
+        </ul>
       </div>
     </div>
 
-    <div class="container-courses courses">
-      <h2>Courses</h2>
-      <div class="course-grid">
-
-        <div class="course-card">
-          <h3>Python for OOP: The A-to-Z OOP Python Programming Course</h3>
-          <p><strong>Issued by:</strong> Meta Brains</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/Python for OOP The A-to-Z OOP Python Programming Course.jpg" alt="Course Image">
-          <a href="https://www.udemy.com/certificate/UC-c9b9f73c-096f-47c2-b745-dc1443376fd2/" target="_blank">View Certificate</a>
+    <!-- Technical Skills -->
+    <div class="section-header">
+      <span class="section-title" data-key="techStack">TECH_STACK</span>
+    </div>
+    <div class="tech-container">
+      <div class="tech-category">
+        <div class="tech-category-title" data-key="languages">Languages</div>
+        <div class="tech-items">
+          <div class="tech-item">Python</div>
+          <div class="tech-item">JavaScript</div>
+          <div class="tech-item">Java</div>
         </div>
-
-        <!-- Course Card 1 -->
-        <div class="course-card">
-          <h3>Aprende PYTHON de CERO a EXPERTO</h3>
-          <p><strong>Issued by:</strong> Udemy</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/Aprende Python de Cero a Experto.jpg" alt="Course Image">
-          <a href="https://www.udemy.com/certificate/UC-bb8659ea-9ac7-4e53-a6e4-413693e993d1/" target="_blank">View Certificate</a>
+      </div>
+      
+      <div class="tech-category">
+        <div class="tech-category-title" data-key="frameworks">Frameworks</div>
+        <div class="tech-items">
+          <div class="tech-item">Django</div>
+          <div class="tech-item">Odoo</div>
+          <div class="tech-item">Flask</div>
+          <div class="tech-item">FastAPI</div>
+          <div class="tech-item">React</div>
         </div>
-        
-        <!-- Course Card 2 -->
-        <div class="course-card">
-          <h3>Curso de Java</h3>
-          <p><strong>Issued by:</strong> Platzi</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/diploma-java.jpg" alt="Course Image">
-          <a href="https://platzi.com/p/maxretana981/curso/10630-java/diploma/detalle/" target="_blank">View Certificate</a>
+      </div>
+      
+      <div class="tech-category">
+        <div class="tech-category-title" data-key="databases">Databases</div>
+        <div class="tech-items">
+          <div class="tech-item">PostgreSQL</div>
+          <div class="tech-item">MongoDB</div>
+          <div class="tech-item">Redis</div>
         </div>
-
-        <div class="course-card">
-          <h3>JavaScript for Beginners: The Complete Course for Beginners</h3>
-          <p><strong>Issued by:</strong> Meta Brains</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/JavaScript for Beginners The Complete Course for Beginners.jpg" alt="Course Image">
-          <a href="https://www.udemy.com/certificate/UC-8b420c0a-3878-4e35-96a3-47543afaf9ee/" target="_blank">View Certificate</a>
+      </div>
+      
+      <div class="tech-category">
+        <div class="tech-category-title" data-key="devopsCloud">DevOps & Cloud</div>
+        <div class="tech-items">
+          <div class="tech-item">Docker</div>
+          <div class="tech-item">Kubernetes</div>
+          <div class="tech-item">AWS</div>
+          <div class="tech-item">Linux</div>
+          <div class="tech-item">Git</div>
         </div>
-
-        <div class="course-card">
-          <h3>TypeScript for Beginners: Mastering TypeScript Fundamentals</h3>
-          <p><strong>Issued by:</strong> Meta Brains</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/TypeScript for Beginners Mastering TypeScript Fundamentals.jpg" alt="Course Image">
-          <a href="https://www.udemy.com/certificate/UC-3171f5d5-793b-4751-b17d-f01891c6bbae/" target="_blank">View Certificate</a>
+      </div>
+      
+      <div class="tech-category">
+        <div class="tech-category-title" data-key="bigData">Big Data</div>
+        <div class="tech-items">
+          <div class="tech-item">PySpark</div>
+          <div class="tech-item">Hadoop</div>
+          <div class="tech-item">Kafka</div>
+          <div class="tech-item">Elasticsearch</div>
+          <div class="tech-item">Apache NiFi</div>
         </div>
-
-        <div class="course-card">
-          <h3>Web Scraping con Python</h3>
-          <p><strong>Issued by:</strong> Udemy</p>
-          <p><strong>Issued on:</strong> November 2024</p>
-          <img src="imgs/courses/Web Scraping con Python.jpg" alt="Course Image">
-          <a href="https://www.udemy.com/certificate/UC-0401285c-0056-4cd5-9505-1f9fc0d746b2/" target="_blank">View Certificate</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Introduction to Fortinet Network Security r5</h3>
-          <p><strong>Issued by:</strong> Fortinet</p>
-          <p><strong>Issued on:</strong> June 2024</p>
-          <img src="imgs/courses/Introduction to Fortinet Network Security r5.jpg" alt="Course Image">
-        </div>
-
-        <div class="course-card">
-          <h3>Java JRE y JDK: compile y ejecute su primer programa</h3>
-          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
-          <p><strong>Issued on:</strong> June 2023</p>
-          <img src="imgs/courses/Java JRE y JDK.png" alt="Course Image">
-          <a href="https://app.aluracursos.com/certificate/45c6b2ad-1938-45cc-a057-cd1ab094d5d6" target="_blank">View Certificate</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Java OO: Entendiendo la Orientación a Objetos</h3>
-          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
-          <p><strong>Issued on:</strong> June 2023</p>
-          <img src="imgs/courses/Java OO.png" alt="Course Image">
-          <a href="https://app.aluracursos.com/certificate/e4858c46-d49e-4cbc-ae94-aee4113d4402" target="_blank">View Certificate</a>
-        </div>
-
-        <div class="course-card">
-          <h3>BrightCoders Ruby on Rails Graduate</h3>
-          <p><strong>Issued by:</strong> BrightCoders</p>
-          <p><strong>Issued on:</strong> May 2023</p>
-          <img src="imgs/courses/Ruby.png" alt="Course Image">
-          <a href="https://badgr.com/public/assertions/drh2bid3SymZtoCmkoBBmw" target="_blank">View Certificate</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Lógica de programación: Primeros pasos</h3>
-          <p><strong>Issued by:</strong> Alura Latam - Oracle</p>
-          <p><strong>Issued on:</strong> April 2023</p>
-          <img src="imgs/courses/LogicaProgramacion.png" alt="Course Image">
-          <a href="https://app.aluracursos.com/certificate/114ad24c-cc05-4ccd-91b5-7756cbe00340" target="_blank">View Certificate</a>
-        </div>
-
-        <div class="course-card">
-          <h3>BrightCoder Accepted</h3>
-          <p><strong>Issued by:</strong> BrightCoder</p>
-          <p><strong>Issued on:</strong> December 2022</p>
-          <img src="imgs/courses/BrightcodersAccepted.png" alt="Course Image">
-          <a href="https://badgr.com/public/assertions/oK8XrOFwRX-u84mCIbLBJw" target="_blank">View Certificate</a>
-        </div>
-        <!-- Add more course cards as needed -->
       </div>
     </div>
-    <footer>
-      <p>Maximiliano Retana - <script>document.write(new Date().getFullYear());</script></p>
-      <img src="imgs/mrlogo.png" alt="MRLogo">
-    </footer>
-  </main>
+
+    <!-- Education -->
+    <div class="section-header">
+      <span class="section-title" data-key="education">EDUCATION</span>
+    </div>
+    <div class="experience-item">
+      <div class="job-title" data-key="intelligentComputing">INTELLIGENT COMPUTING ENGINEERING</div>
+      <div class="job-company" data-key="universityColima">University of Colima, Mexico</div>
+      <div class="job-period">2019 - 2023</div>
+      <div class="job-description">
+        <ul data-key="educationTasks">
+          <li>Graduated with academic excellence and awarded the best GPA in the program</li>
+          <li>Specialized in artificial intelligence, machine learning, and data science</li>
+          <li>Completed thesis on "Big Data Analytics for Business Intelligence"</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="section-header">
+      <span class="section-title" data-key="languagesSection">LANGUAGES</span>
+    </div>
+    <div class="languages-display">
+      <div class="language-item">
+        <div class="language-icon">
+          <i class="fas fa-comment" style="color: #e74c3c;"></i>
+        </div>
+        <span class="language-name" data-key="spanishNative">Spanish (Native)</span>
+      </div>
+      <div class="language-item">
+        <div class="language-icon">
+          <i class="fas fa-globe" style="color: #3498db;"></i>
+        </div>
+        <span class="language-name" data-key="englishIntermediate">English (Intermediate)</span>
+      </div>
+    </div>
+
+    <!-- Terminal Footer -->
+    <div style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-terminal);">
+      <div class="command-line">
+        <span class="prompt">maxretana@dev:</span><span class="path">~/portfolio</span><span class="command" data-key="thanksCommand">$ echo "Thanks for visiting!"</span>
+      </div>
+      <div class="command-output">
+        <div class="output-line" style="color: var(--accent-green);" data-key="thanksMessage">Thanks for visiting!</div>
+        <div class="output-line"><span data-key="lastUpdated">Last updated:</span> October 2025</div>
+        <div class="output-line" data-key="remoteOpportunities">Available for remote opportunities worldwide</div>
+      </div>
+      <div class="command-line">
+        <span class="prompt">maxretana@dev:</span><span class="path">~/portfolio</span><span class="command">$ _</span><span class="cursor"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Translations object
+const translations = {
+  en: {
+    terminalCommand: "$ cat README.md",
+    profileInfo: "PROFILE_INFO",
+    profileTitle: "BACKEND DEVELOPER | BIG DATA SPECIALIST",
+    profileDescription: "I am a backend developer with big data experience, specialized in web application development and process automation. With a focus on technologies such as Django, Flask, FastAPI, React, and both relational and non-relational databases, I enjoy working in a team and adapt quickly to any circumstance. My commitment is to continuous improvement and effective problem solving.",
+    interests: "Interests:",
+    location: "Location:",
+    age: "Age:",
+    years: "years",
+    status: "Status:",
+    available: "Currently working",
+    contactInfo: "CONTACT_INFO",
+    phone: "PHONE:",
+    workExperience: "WORK_EXPERIENCE",
+    softwareDeveloper: "SOFTWARE DEVELOPER",
+    january2025Present: "January 2025 - Present",
+    trusotTasks: `<li>Updating and maintaining existing modules of odoo applications</li>
+                  <li>Developing new modules and features based on client requirements</li>
+                  <li>Integrating odoo with third-party services and APIs</li>
+                  <li>Optimizing database performance and queries for large datasets</li>
+                  <li>Helping users troubleshoot and resolve issues</li>
+                  <li>Creating APIs to facilitate integration with odoo</li>`,
+    bigDataDeveloper: "BIG DATA DEVELOPER",
+    july2023November2024: "July 2023 - November 2024",
+    hyperoxBigDataTasks: `<li>Led a project for the creation of a data center based on a DMS with artificial intelligence to optimize user work</li>
+                          <li>Server creation and administration in Proxmox virtualization platform</li>
+                          <li>Implemented big data pipelines using Python, Apache NiFi, Spark, and Elasticsearch</li>
+                          <li>Developed real-time data processing solutions with Apache Kafka</li>
+                          <li>Optimized data workflows resulting in 40% performance improvement</li>`,
+    backendDeveloper: "BACKEND DEVELOPER",
+    hyperoxBackendTasks: `<li>Developed a comprehensive document management system (DMS) from conception to implementation</li>
+                          <li>Implemented RESTful APIs and integrated with third-party services including NAS API</li>
+                          <li>Built scalable backend solutions using Python, Django, and FastAPI</li>
+                          <li>Designed and optimized database schemas for PostgreSQL and MongoDB</li>
+                          <li>Collaborated with frontend team using React for seamless integration</li>`,
+    techStack: "TECH_STACK",
+    languages: "Languages",
+    frameworks: "Frameworks",
+    databases: "Databases",
+    devopsCloud: "DevOps & Cloud",
+    bigData: "Big Data",
+    education: "EDUCATION",
+    intelligentComputing: "INTELLIGENT COMPUTING ENGINEERING",
+    universityColima: "University of Colima, Mexico",
+    educationTasks: `<li>Graduated with academic excellence and awarded the best GPA in the program</li>
+                     <li>Specialized in artificial intelligence, machine learning, and data science</li>
+                     <li>Completed thesis on "Big Data Analytics for Business Intelligence"</li>`,
+    languagesSection: "LANGUAGES",
+    spanishNative: "Spanish (Native)",
+    englishIntermediate: "English (Intermediate)",
+    thanksCommand: '$ echo "Thanks for visiting!"',
+    thanksMessage: "Thanks for visiting!",
+    lastUpdated: "Last updated:",
+    remoteOpportunities: "Available for remote opportunities worldwide"
+  },
+  es: {
+    terminalCommand: "$ cat README.md",
+    profileInfo: "INFORMACIÓN_PERFIL",
+    profileTitle: "DESARROLLADOR BACKEND | ESPECIALISTA EN BIG DATA",
+    profileDescription: "Soy un desarrollador backend con experiencia en big data, especializado en desarrollo de aplicaciones web y automatización de procesos. Con enfoque en tecnologías como Django, Flask, FastAPI, React, y bases de datos relacionales y no relacionales, disfruto trabajar en equipo y me adapto rápidamente a cualquier circunstancia. Mi compromiso es con la mejora continua y la resolución efectiva de problemas.",
+    interests: "Intereses:",
+    location: "Ubicación:",
+    age: "Edad:",
+    years: "años",
+    status: "Estado:",
+    available: "Actualmente trabajando",
+    contactInfo: "INFORMACIÓN_CONTACTO",
+    phone: "TELÉFONO:",
+    workExperience: "EXPERIENCIA_LABORAL",
+    softwareDeveloper: "DESARROLLADOR DE SOFTWARE",
+    january2025Present: "Enero 2025 - Presente",
+    trusotTasks: `<li>Actualización y mantenimiento de módulos existentes de aplicaciones odoo</li>
+                  <li>Desarrollo de nuevos módulos y características basadas en requerimientos del cliente</li>
+                  <li>Integración de odoo con servicios de terceros y APIs</li>
+                  <li>Optimización del rendimiento de base de datos y consultas para grandes conjuntos de datos</li>
+                  <li>Ayudar a usuarios a solucionar y resolver problemas</li>
+                  <li>Creación de APIs para facilitar la integración con odoo</li>`,
+    bigDataDeveloper: "DESARROLLADOR BIG DATA",
+    july2023November2024: "Julio 2023 - Noviembre 2024",
+    hyperoxBigDataTasks: `<li>Lideré un proyecto para la creación de un centro de datos basado en un DMS con inteligencia artificial para optimizar el trabajo del usuario</li>
+                          <li>Creación y administración de servidores en plataforma de virtualización Proxmox</li>
+                          <li>Implementé pipelines de big data usando Python, Apache NiFi, Spark, y Elasticsearch</li>
+                          <li>Desarrollé soluciones de procesamiento de datos en tiempo real con Apache Kafka</li>
+                          <li>Optimicé flujos de trabajo de datos resultando en 40% de mejora en rendimiento</li>`,
+    backendDeveloper: "DESARROLLADOR BACKEND",
+    hyperoxBackendTasks: `<li>Desarrollé un sistema integral de gestión de documentos (DMS) desde la concepción hasta la implementación</li>
+                          <li>Implementé APIs RESTful e integré con servicios de terceros incluyendo API NAS</li>
+                          <li>Construí soluciones backend escalables usando Python, Django, y FastAPI</li>
+                          <li>Diseñé y optimicé esquemas de base de datos para PostgreSQL y MongoDB</li>
+                          <li>Colaboré con el equipo frontend usando React para integración perfecta</li>`,
+    techStack: "STACK_TECNOLÓGICO",
+    languages: "Lenguajes",
+    frameworks: "Frameworks",
+    databases: "Bases de Datos",
+    devopsCloud: "DevOps y Nube",
+    bigData: "Big Data",
+    education: "EDUCACIÓN",
+    intelligentComputing: "INGENIERÍA EN COMPUTACIÓN INTELIGENTE",
+    universityColima: "Universidad de Colima, México",
+    educationTasks: `<li>Graduado con excelencia académica y galardonado con el mejor promedio del programa</li>
+                     <li>Especializado en inteligencia artificial, aprendizaje automático y ciencia de datos</li>
+                     <li>Completé tesis sobre "Analítica de Big Data para Inteligencia de Negocios"</li>`,
+    languagesSection: "IDIOMAS",
+    spanishNative: "Español (Nativo)",
+    englishIntermediate: "Inglés (Intermedio)",
+    thanksCommand: '$ echo "¡Gracias por visitar!"',
+    thanksMessage: "¡Gracias por visitar!",
+    lastUpdated: "Última actualización:",
+    remoteOpportunities: "Disponible para oportunidades remotas en todo el mundo"
+  }
+};
+
+let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+
+// Language toggle functionality
+function toggleLanguage() {
+  currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+  localStorage.setItem('preferredLanguage', currentLanguage);
+  updateContent();
+  updateLanguageButton();
+}
+
+function updateContent() {
+  const elements = document.querySelectorAll('[data-key]');
+  elements.forEach(element => {
+    const key = element.getAttribute('data-key');
+    if (translations[currentLanguage][key]) {
+      if (element.tagName === 'UL') {
+        element.innerHTML = translations[currentLanguage][key];
+      } else {
+        element.textContent = translations[currentLanguage][key];
+      }
+    }
+  });
+  
+  // Update document language attribute
+  document.documentElement.lang = currentLanguage;
+}
+
+function updateLanguageButton() {
+  const langText = document.getElementById('langText');
+  langText.textContent = currentLanguage === 'en' ? 'ES' : 'EN';
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+  updateContent();
+  updateLanguageButton();
+  
+  // Add event listener to language button
+  document.getElementById('languageBtn').addEventListener('click', toggleLanguage);
+});
+
+// Simple typing effect for the cursor
+setInterval(() => {
+  const cursors = document.querySelectorAll('.cursor');
+  cursors.forEach(cursor => {
+    cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+  });
+}, 500);
+
+// Matrix rain effect (optional - uncomment to enable)
+function createMatrixRain() {
+  const matrixContainer = document.createElement('div');
+  matrixContainer.className = 'matrix-bg';
+  document.body.appendChild(matrixContainer);
+  
+  const chars = '01';
+  const columns = Math.floor(window.innerWidth / 20);
+  
+  for (let i = 0; i < columns; i++) {
+    const column = document.createElement('div');
+    column.style.position = 'absolute';
+    column.style.left = i * 20 + 'px';
+    column.style.color = 'var(--text-primary)';
+    column.style.fontSize = '14px';
+    column.style.fontFamily = 'var(--font-mono)';
+    
+    let text = '';
+    for (let j = 0; j < 50; j++) {
+      text += chars[Math.floor(Math.random() * chars.length)] + '<br>';
+    }
+    column.innerHTML = text;
+    
+    column.style.animation = `fall ${Math.random() * 3 + 2}s linear infinite`;
+    matrixContainer.appendChild(column);
+  }
+}
+
+// Uncomment to enable matrix effect
+// createMatrixRain();
+</script>
+
+<style>
+/* Language toggle button styles */
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.lang-btn {
+  background: var(--bg-terminal);
+  border: 1px solid var(--border-terminal);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+.lang-btn i {
+  font-size: 16px;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}
+
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+</style>
+
 </body>
 </html>

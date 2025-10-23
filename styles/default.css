@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--colorBackground);
 }
 
 html, body {
@@ -13,7 +12,11 @@ html, body {
 }
 
 body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
+  padding: var(--spacing-xl);
 }
 
 img {
@@ -34,4 +37,213 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+/* Perfil principal */
+.profile-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--bg-card-light);
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.profile-description {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.interests {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.interest-tag {
+  background-color: var(--bg-card-light);
+  color: var(--text-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Experiencia laboral */
+.experience-item {
+  margin-bottom: var(--spacing-xl);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.experience-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.experience-company {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.experience-period {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.experience-description {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.experience-description ul {
+  margin-left: var(--spacing-lg);
+}
+
+.experience-description li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Herramientas y habilidades */
+.tools-grid {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.tool-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: var(--font-size-lg);
+}
+
+.tool-ai { background-color: var(--accent-orange); }
+.tool-ps { background-color: var(--accent-blue); }
+.tool-id { background-color: var(--accent-purple); }
+.tool-xd { background-color: var(--accent-red); }
+.tool-ae { background-color: var(--accent-purple); }
+.tool-pr { background-color: var(--accent-blue); }
+
+/* Idiomas */
+.languages {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.language-flag {
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Portfolio */
+.portfolio-links {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.portfolio-link {
+  background-color: var(--bg-card-light);
+  color: var(--text-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: background-color 0.2s ease;
+}
+
+.portfolio-link:hover {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Detalles de contacto */
+.contact-details {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-md);
+    gap: var(--spacing-lg);
+  }
+  
+  .profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  .interests {
+    justify-content: center;
+  }
 }
